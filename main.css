@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Calibre';
+    src: url('fonts/calibre/CalibreRegular.woff') format('woff'),
+         url('fonts/calibre/CalibreRegular.ttf') format('truetype'),
+         url('fonts/calibre/CalibreRegular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'CalibreMedium';
+    src: url('fonts/calibre/CalibreMedium.woff') format('woff'),
+         url('fonts/calibre/CalibreMedium.ttf') format('truetype'),
+         url('fonts/calibre/CalibreMedium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'CalibreBold';
+    src: url('fonts/calibre/CalibreBold.woff') format('woff'),
+         url('fonts/calibre/CalibreBold.ttf') format('truetype'),
+         url('fonts/calibre/CalibreBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'CalibreSemiBold';
+    src: url('fonts/calibre/CalibreSemibold.woff') format('woff'),
+         url('fonts/calibre/CalibreSemibold.ttf') format('truetype'),
+         url('fonts/calibre/CalibreSemibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Autograph';
+    src: url('fonts/autograph/Autograph.woff') format('woff'),
+         url('fonts/autograph/Autograph.ttf') format('truetype'),
+         url('fonts/autograph/Autograph.woff2') format('woff2');
+}
+
+*:not(.fas, .signature, .bold, .semibold, .medium)
+{
+    font-family: 'Calibre' !important;
+}
+
+html,
+body 
+{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+}
+
+.bold
+{
+    font-family: 'CalibreBold';
+}
+
+.semibold
+{
+    font-family: 'CalibreSemiBold';
+}
+
+.Medium
+{
+    font-family: 'CalibreMedium';
+}
+
+.row
+{
+    margin: 0 0 0 0;
+}
+
+.scrolled, .scrolled:hover
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar button:focus, .navbar button:hover
+{
+    outline:none;
+}
+
+.header {
+    background-image: url('images/bg_mono.gif');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.signature
+{
+    font-family: 'Autograph';
+
+}
+
+.col-12, .container-fluid
+{
+    padding: 0 0 0 0;
+}
+
+.col-12 img
+{
+    width: 100vw;
+    height: auto;
+}
+
+.stereoscope img:first-child
+{
+    position: absolute;
+    z-index: 2;
+}
+
+.stereoscope h3
+{
+    color: white;
+    position: absolute;
+    font-size: 35vw;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.slide-mars, .slide-mars:hover
+{
+    color: #000;
+    text-decoration: none;
+}
+
+.btn {
+
+    font-size: 0.8rem;
+    color: #000;
+    background-color: transparent;
+    border: 3px solid #000;
+}
+
+footer
+{
+    background-color: black;
+    color: white;
+}
+
+.py-6
+{
+    padding: 6rem 0 4.5rem 0;
+}
+
+.offcanvas-collapse {
+    position: fixed;
+    top: 56px; /* Height of navbar */
+    bottom: 0;
+    right: 100%;
+    left:-200px;
+    width: 200px;
+    padding-right: 1em;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: transparent;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+    transition-property: left, visibility;
+  }
+
+/* Makes the nav visibile with the open class */
+  .offcanvas-collapse.open {
+    left: 0;
+    visibility: visible;
+  }
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media screen and (max-width: 576px)
+{
+    .header
+    {
+        background-image: url('images/bg_mono_mobile.gif');
+    }
+    
+}
